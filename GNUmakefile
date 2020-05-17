@@ -84,23 +84,6 @@ libxmplite_obj := $(obj)/$(libxmplite)
 libxmplite_cflags := -DHAVE_ROUND -DLIBXMP_CORE_PLAYER -DBUILDING_STATIC -I$(libxmplite_inc)/libxmp-lite -Wno-unused-parameter -Wno-sign-compare
 
 
-#### LPeg
-
-lpeg := lpeg
-
-lpeg_objs := \
-    lpcap.c \
-    lpcode.c \
-    lpprint.c \
-    lptree.c \
-    lpvm.c \
-
-lpeg_root := $(source)/$(lpeg)
-lpeg_src := $(lpeg_root)/src
-lpeg_inc := $(lpeg_root)/include
-lpeg_obj := $(obj)/$(lpeg)
-
-
 #### PhysicsFS
 
 physfs := physfs
@@ -801,7 +784,6 @@ libraries := \
     engine \
     glad \
     libxmplite \
-    lpeg \
     mact \
     voidwrap \
 
